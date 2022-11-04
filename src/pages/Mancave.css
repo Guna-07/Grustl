@@ -1,0 +1,14 @@
+.mancavep {
+    font-size: 70px;
+    position: absolute;
+    width: 250px;
+    height: 175px;
+    left: 200px;
+    top: 210px;
+    pointer-events: none;
+    color: black;    
+    letter-spacing: 2px;
+    font-weight:bolder;
+    font-family: 'mulish';
+    letter-spacing: 0.75px;
+  }

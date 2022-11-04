@@ -1,0 +1,114 @@
+.navbar {
+  height: 600px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  vertical-align: middle;
+}
+
+/* sidebar open icon */
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+  vertical-align: middle;
+}
+
+/*when navbar is hidden */
+.nav-menu {
+  background-image:
+      linear-gradient(
+        to right,
+       #efefef,white
+      );
+  background-color: #fff;
+  width: 800px;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 1000ms;
+  z-index: 100;
+  scroll-behavior:smooth;
+}
+
+/* when navbar is open */
+.nav-menu.active {
+  left: 0;
+  transition: 900ms;
+}
+
+ /* menucontent css */
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 40px 10px 1px 40px;
+  list-style: none;
+  height: 100px;
+  /* transform: translateX(5%);
+  transition: transfrom 2s cubic-bezier(0.73,-0.19, 0.53, 1.23) 3s; */
+}
+
+/* menubarcontent */
+.nav-text a {
+  text-decoration: none;
+  font-weight: 700;
+  color: grey;
+  letter-spacing: -1px;
+  width: 95%;
+  height: 100%;
+  line-height: 100px;
+  font-size: 70px;
+  display: flex;
+  font-family: 'Avenir';
+  padding: 0 16px;
+  border-radius: 4px;
+  animation: fadeIn 3s;
+}
+
+
+/* hovercss */
+.nav-text a:hover {
+  color: black;
+  transition: 10ms;
+}
+
+/* sidebar */
+.nav-menu-items {
+  width: 100%;
+  z-index: 100;
+}
+
+
+span {
+  margin-left: 16px;
+}
+
+.mrside {
+  position: absolute;
+  scale: 170%;
+  left: 360px;
+  top: 270px;
+  color: grey;
+}
+
+@keyframes fadeIn {
+  from {
+    left: 0px;
+    animation-delay: 50ms;
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+  to {
+    left: 10px;
+    animation-delay: 100ms;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
